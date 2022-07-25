@@ -8,8 +8,6 @@ export default function Home() {
   const { categoriaActual, cafes, hamburguesas, pizzas, donas, pasteles, galletas } = useQuiosco()
   const [productos, setProductos] = useState([])
 
-  console.log(categoriaActual)
-
   useEffect(() => {
     switch (categoriaActual.id) {
       case 1:
